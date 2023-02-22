@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import ReactDOM from "react-dom";
+import AssemblyLine from "./components/Assembly/AssemblyLine";
+ import AddItem from './components/Assembly/AddItem';
+import CardPlayBoard from "./components/CardPlay/CardPlayBoard";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+/* Changes made to this file will not affect your tests.
+ * This file is used to control the behavior of the web preview. 
+
+
+*/
+
+
+function App(){
+  
+  return(
+    
+   <div>
+      <AddItem />
+      <AssemblyLine />
+      <CardPlayBoard />
     </div>
-  );
+  )
 }
 
 export default App;
